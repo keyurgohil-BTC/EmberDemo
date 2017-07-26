@@ -1,0 +1,9 @@
+
+<ul>
+{{#each model as |rental|}}
+  <li>
+    The {{rental.name}} with rate {{rental.dailyRate}}
+    <button {{action 'delete' rental}}>Delete</button>
+  </li>
+{{/each}}
+</ul>

@@ -1,0 +1,16 @@
+<h1>Add a rental</h1>
+<form>
+  <div>
+    <label>
+      Name<br>
+      {{input type="text" value=model.name}}
+    </label>
+  </div>
+  <div>
+    <label>
+      Daily Rate<br>
+      {{input type="text" value=model.dailyRate}}
+    </label>
+  </div>
+  <button type="submit" class="btn btn-primary" {{action 'save'}}>Submit</button>
+</form>

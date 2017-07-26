@@ -7,6 +7,10 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
+  this.route('rental');
+  this.route('rental_new');
+  this.route('bookings');
+  this.route('booking-new');
 });
 
 export default Router;
