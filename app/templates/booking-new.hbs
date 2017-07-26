@@ -1,1 +1,28 @@
-{{outlet}}
+<h1>Book Now</h1>
+<form>
+  <div>
+    <label>
+      Rental : <br>
+      {{input type="text" value=model.rental_id}}
+    </label>
+  </div>
+  <div>
+    <label>
+      Start Date : <br>
+      {{input type="text" value=model.start_at}}
+    </label>
+  </div>
+  <div>
+    <label>
+      End Date : <br>
+      {{input type="text" value=model.end_at}}
+    </label>
+  </div>
+  <div>
+    <label>
+      Email : <br>
+      {{input type="text" value=model.client_email}}
+    </label>
+  </div>
+  <button type="submit" class="btn btn-primary" {{action 'save'}}>Submit</button>
+</form>
